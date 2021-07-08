@@ -1,47 +1,15 @@
-// var titleEl = document.getElementById('title');
-// // var urlLink = document.getElementById('url');
 
+var bitcoinButton = document.querySelector(".bitcoin-button")
 
-// fetch("https://salty-mountain-68764.herokuapp.com/https://newsdata.io/api/1/news?apikey=pub_486ab7a2d3cb5f723e5c9de7e68dac7e0ba&q=bitcoin&language=en")
-// .then(response => {
-//     return response.json();
-//     // console.log(response);
-// })
-// .then(data => {
-//     console.log(data);
-//     for (var i = 0; i < data.results.length; i++) {
-       
-//         var textEl = document.createElement('div');
-//         textEl.textContent = data.results[i].title;
-//         titleEl.append(textEl)
+bitcoinButton.addEventListener("click", function (event) {
+console.log(event)
 
-//         var urlEl = document.createElement('div');
-//         urlEl.textContent = data.results[i].link;
-//         titleEl.append(urlEl);
-//     }
-// });
+var redirectUrl = ("./indexCoinSelected.html")
 
+document.location.replace(redirectUrl)
 
-
-
-fetch("https://salty-mountain-68764.herokuapp.com/https://api.coingecko.com/api/v3/exchanges/bitcoin_com/tickers")
-.then(response => {
-    return response.json();
-    // console.log(response);
 })
-.then(data => {
-    console.log(data);
-    // for (var i = 0; i < data.results.length; i++) {
-       
-    //     // var textEl = document.createElement('div');
-    //     // textEl.textContent = data.results[i].title;
-    //     // titleEl.append(textEl)
 
-    //     // var urlEl = document.createElement('div');
-    //     // urlEl.textContent = data.results[i].link;
-    // //     // titleEl.append(urlEl);
-    // }
-});
 
 
 
