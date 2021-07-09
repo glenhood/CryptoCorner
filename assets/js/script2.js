@@ -1,5 +1,3 @@
-
-
 var newsEl = document.querySelector('.news');
 // var urlLink = document.getElementById('url');
 var tickerEl = document.querySelector('.ticker');
