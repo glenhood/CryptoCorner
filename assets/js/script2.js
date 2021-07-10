@@ -19,6 +19,7 @@ fetch("https://salty-mountain-68764.herokuapp.com/https://newsdata.io/api/1/news
 
         var urlEl = document.querySelector('#news-one');
         urlEl.textContent = data.results[0].link;
+        document.createAttribute("class", "href=data.results[0].link")
         newsEl.append(urlEl);
 
 
@@ -44,65 +45,65 @@ fetch("https://salty-mountain-68764.herokuapp.com/https://newsdata.io/api/1/news
 
         //News Title
         var textEl = document.querySelector('#news-four');
-        textEl.textContent = data.results[0].title;
+        textEl.textContent = data.results[3].title;
         newsEl.append(textEl)
 
         var urlEl = document.querySelector('#news-four');
-        urlEl.textContent = data.results[0].link;
+        urlEl.textContent = data.results[3].link;
         newsEl.append(urlEl);
 
         //News Title
-        var textEl = document.querySelector('#news-one');
-        textEl.textContent = data.results[0].title;
+        var textEl = document.querySelector('#news-five');
+        textEl.textContent = data.results[4].title;
         newsEl.append(textEl)
 
-        var urlEl = document.querySelector('#news-one');
-        urlEl.textContent = data.results[0].link;
+        var urlEl = document.querySelector('#news-five');
+        urlEl.textContent = data.results[4].link;
         newsEl.append(urlEl);
 
         //News Title
-        var textEl = document.querySelector('#news-one');
-        textEl.textContent = data.results[0].title;
+        var textEl = document.querySelector('#news-six');
+        textEl.textContent = data.results[5].title;
         newsEl.append(textEl)
 
-        var urlEl = document.querySelector('#news-one');
-        urlEl.textContent = data.results[0].link;
+        var urlEl = document.querySelector('#news-six');
+        urlEl.textContent = data.results[5].link;
         newsEl.append(urlEl);
 
         //News Title
-        var textEl = document.querySelector('#news-one');
-        textEl.textContent = data.results[0].title;
+        var textEl = document.querySelector('#news-seven');
+        textEl.textContent = data.results[6].title;
         newsEl.append(textEl)
 
-        var urlEl = document.querySelector('#news-one');
-        urlEl.textContent = data.results[0].link;
+        var urlEl = document.querySelector('#news-seven');
+        urlEl.textContent = data.results[6].link;
         newsEl.append(urlEl);
 
         //News Title
-        var textEl = document.querySelector('#news-one');
-        textEl.textContent = data.results[0].title;
+        var textEl = document.querySelector('#news-eight');
+        textEl.textContent = data.results[7].title;
         newsEl.append(textEl)
 
-        var urlEl = document.querySelector('#news-one');
-        urlEl.textContent = data.results[0].link;
+        var urlEl = document.querySelector('#news-eight');
+        urlEl.textContent = data.results[7].link;
         newsEl.append(urlEl);
 
         //News Title
-        var textEl = document.querySelector('#news-one');
-        textEl.textContent = data.results[0].title;
+        var textEl = document.querySelector('#news-nine');
+        textEl.textContent = data.results[8].title;
         newsEl.append(textEl)
 
-        var urlEl = document.querySelector('#news-one');
-        urlEl.textContent = data.results[0].link;
+        var urlEl = document.querySelector('#news-nine');
+        urlEl.textContent = data.results[8].link;
         newsEl.append(urlEl);
 
         //News Title
-        var textEl = document.querySelector('#news-one');
-        textEl.textContent = data.results[0].title;
+        var textEl = document.querySelector('#news-ten');
+        textEl.textContent = data.results[9].title;
         newsEl.append(textEl)
 
-        var urlEl = document.querySelector('#news-one');
-        urlEl.textContent = data.results[0].link;
+        var urlEl = document.querySelector('#news-ten');
+        urlEl.textContent = data.results[9].link;
         newsEl.append(urlEl);
     
 });
