@@ -13,96 +13,134 @@ fetch("https://salty-mountain-68764.herokuapp.com/https://newsdata.io/api/1/news
 .then(data => {
     console.log(data);
         //News Title
-        var textEl = document.querySelector('#news-one');
+        var textEl = document.querySelector('#news-title');
         textEl.textContent = data.results[0].title;
-        newsEl.append(textEl)
+        newsEl.append(textEl);
+        console.log(data.results[0].title);
+        
 
-        var urlEl = document.querySelector('#news-one');
+        var urlEl = document.querySelector('#news-url');
+        urlEl = document.createElement('a');
+        urlEl.setAttribute('href', data.results[0].link);
         urlEl.textContent = data.results[0].link;
-        document.createAttribute("class", "href=data.results[0].link")
         newsEl.append(urlEl);
 
-
         //News Title
-        var textEl = document.querySelector('#news-two');
+        var textEl = document.querySelector('#news-title-two');
         textEl.textContent = data.results[1].title;
-        newsEl.append(textEl)
+        newsEl.append(textEl);
+        console.log(data.results[1].title);
+        
 
-        var urlEl = document.querySelector('#news-two');
+        var urlEl = document.querySelector('#news-url-two');
+        urlEl = document.createElement('a');
+        urlEl.setAttribute('href', data.results[1].link);
         urlEl.textContent = data.results[1].link;
         newsEl.append(urlEl);
 
 
         //News Title
-        var textEl = document.querySelector('#news-three');
+        var textEl = document.querySelector('#news-title-three');
         textEl.textContent = data.results[2].title;
-        newsEl.append(textEl)
+        newsEl.append(textEl);
+        console.log(data.results[2].title);
+        
 
-        var urlEl = document.querySelector('#news-three');
+        var urlEl = document.querySelector('#news-url-three');
+        urlEl = document.createElement('a');
+        urlEl.setAttribute('href', data.results[2].link);
         urlEl.textContent = data.results[2].link;
         newsEl.append(urlEl);
 
 
         //News Title
-        var textEl = document.querySelector('#news-four');
+        var textEl = document.querySelector('#news-title-four');
         textEl.textContent = data.results[3].title;
-        newsEl.append(textEl)
+        newsEl.append(textEl);
+        console.log(data.results[3].title);
+        
 
-        var urlEl = document.querySelector('#news-four');
+        var urlEl = document.querySelector('#news-url-four');
+        urlEl = document.createElement('a');
+        urlEl.setAttribute('href', data.results[3].link);
         urlEl.textContent = data.results[3].link;
         newsEl.append(urlEl);
 
         //News Title
-        var textEl = document.querySelector('#news-five');
+        var textEl = document.querySelector('#news-title-five');
         textEl.textContent = data.results[4].title;
-        newsEl.append(textEl)
+        newsEl.append(textEl);
+        console.log(data.results[4].title);
+        
 
-        var urlEl = document.querySelector('#news-five');
+        var urlEl = document.querySelector('#news-url-five');
+        urlEl = document.createElement('a');
+        urlEl.setAttribute('href', data.results[4].link);
         urlEl.textContent = data.results[4].link;
         newsEl.append(urlEl);
 
         //News Title
-        var textEl = document.querySelector('#news-six');
+        var textEl = document.querySelector('#news-title-six');
         textEl.textContent = data.results[5].title;
-        newsEl.append(textEl)
+        newsEl.append(textEl);
+        console.log(data.results[5].title);
+        
 
-        var urlEl = document.querySelector('#news-six');
+        var urlEl = document.querySelector('#news-url-six');
+        urlEl = document.createElement('a');
+        urlEl.setAttribute('href', data.results[5].link);
         urlEl.textContent = data.results[5].link;
         newsEl.append(urlEl);
 
         //News Title
-        var textEl = document.querySelector('#news-seven');
+        var textEl = document.querySelector('#news-title-seven');
         textEl.textContent = data.results[6].title;
-        newsEl.append(textEl)
+        newsEl.append(textEl);
+        console.log(data.results[6].title);
+        
 
-        var urlEl = document.querySelector('#news-seven');
+        var urlEl = document.querySelector('#news-url-seven');
+        urlEl = document.createElement('a');
+        urlEl.setAttribute('href', data.results[6].link);
         urlEl.textContent = data.results[6].link;
         newsEl.append(urlEl);
 
         //News Title
-        var textEl = document.querySelector('#news-eight');
+        var textEl = document.querySelector('#news-title-eight');
         textEl.textContent = data.results[7].title;
-        newsEl.append(textEl)
+        newsEl.append(textEl);
+        console.log(data.results[7].title);
+        
 
-        var urlEl = document.querySelector('#news-eight');
+        var urlEl = document.querySelector('#news-url-eight');
+        urlEl = document.createElement('a');
+        urlEl.setAttribute('href', data.results[7].link);
         urlEl.textContent = data.results[7].link;
         newsEl.append(urlEl);
 
         //News Title
-        var textEl = document.querySelector('#news-nine');
+        var textEl = document.querySelector('#news-title-nine');
         textEl.textContent = data.results[8].title;
-        newsEl.append(textEl)
+        newsEl.append(textEl);
+        console.log(data.results[8].title);
+        
 
-        var urlEl = document.querySelector('#news-nine');
+        var urlEl = document.querySelector('#news-url-nine');
+        urlEl = document.createElement('a');
+        urlEl.setAttribute('href', data.results[8].link);
         urlEl.textContent = data.results[8].link;
         newsEl.append(urlEl);
 
         //News Title
-        var textEl = document.querySelector('#news-ten');
+        var textEl = document.querySelector('#news-title-ten');
         textEl.textContent = data.results[9].title;
-        newsEl.append(textEl)
+        newsEl.append(textEl);
+        console.log(data.results[9].title);
+        
 
-        var urlEl = document.querySelector('#news-ten');
+        var urlEl = document.querySelector('#news-url-ten');
+        urlEl = document.createElement('a');
+        urlEl.setAttribute('href', data.results[9].link);
         urlEl.textContent = data.results[9].link;
         newsEl.append(urlEl);
     
