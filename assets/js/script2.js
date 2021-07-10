@@ -1,22 +1,107 @@
+//Variables
 var newsEl = document.querySelector('.news');
-// var urlLink = document.getElementById('url');
 var tickerEl = document.querySelector('.ticker');
 
 
-fetch("https://salty-mountain-68764.herokuapp.com/https://newsdata.io/api/1/news?apikey=pub_486ab7a2d3cb5f723e5c9de7e68dac7e0ba&q=bitcoin&language=en")
+
+
+//Fetch Call: News IO
+fetch("https://salty-mountain-68764.herokuapp.com/https://newsdata.io/api/1/news?apikey=pub_516dfa61485d9a13df33b7be9a7ff5a6ec0&q=bitcoin&language=en")
 .then(response => {
     return response.json();
-    // console.log(response);
 })
 .then(data => {
     console.log(data);
-    // for (var i = 0; i < data.results.length; i++) {
-       
-        var textEl = document.querySelector('#one-one');
+        //News Title
+        var textEl = document.querySelector('#news-one');
         textEl.textContent = data.results[0].title;
         newsEl.append(textEl)
 
-        var urlEl = document.querySelector('#one-two');
+        var urlEl = document.querySelector('#news-one');
+        urlEl.textContent = data.results[0].link;
+        newsEl.append(urlEl);
+
+
+        //News Title
+        var textEl = document.querySelector('#news-two');
+        textEl.textContent = data.results[1].title;
+        newsEl.append(textEl)
+
+        var urlEl = document.querySelector('#news-two');
+        urlEl.textContent = data.results[1].link;
+        newsEl.append(urlEl);
+
+
+        //News Title
+        var textEl = document.querySelector('#news-three');
+        textEl.textContent = data.results[2].title;
+        newsEl.append(textEl)
+
+        var urlEl = document.querySelector('#news-three');
+        urlEl.textContent = data.results[2].link;
+        newsEl.append(urlEl);
+
+
+        //News Title
+        var textEl = document.querySelector('#news-four');
+        textEl.textContent = data.results[0].title;
+        newsEl.append(textEl)
+
+        var urlEl = document.querySelector('#news-four');
+        urlEl.textContent = data.results[0].link;
+        newsEl.append(urlEl);
+
+        //News Title
+        var textEl = document.querySelector('#news-one');
+        textEl.textContent = data.results[0].title;
+        newsEl.append(textEl)
+
+        var urlEl = document.querySelector('#news-one');
+        urlEl.textContent = data.results[0].link;
+        newsEl.append(urlEl);
+
+        //News Title
+        var textEl = document.querySelector('#news-one');
+        textEl.textContent = data.results[0].title;
+        newsEl.append(textEl)
+
+        var urlEl = document.querySelector('#news-one');
+        urlEl.textContent = data.results[0].link;
+        newsEl.append(urlEl);
+
+        //News Title
+        var textEl = document.querySelector('#news-one');
+        textEl.textContent = data.results[0].title;
+        newsEl.append(textEl)
+
+        var urlEl = document.querySelector('#news-one');
+        urlEl.textContent = data.results[0].link;
+        newsEl.append(urlEl);
+
+        //News Title
+        var textEl = document.querySelector('#news-one');
+        textEl.textContent = data.results[0].title;
+        newsEl.append(textEl)
+
+        var urlEl = document.querySelector('#news-one');
+        urlEl.textContent = data.results[0].link;
+        newsEl.append(urlEl);
+
+        //News Title
+        var textEl = document.querySelector('#news-one');
+        textEl.textContent = data.results[0].title;
+        newsEl.append(textEl)
+
+        var urlEl = document.querySelector('#news-one');
+        urlEl.textContent = data.results[0].link;
+        newsEl.append(urlEl);
+
+        //News Title
+        var textEl = document.querySelector('#news-one');
+        textEl.textContent = data.results[0].title;
+        newsEl.append(textEl)
+
+        var urlEl = document.querySelector('#news-one');
         urlEl.textContent = data.results[0].link;
         newsEl.append(urlEl);
     
