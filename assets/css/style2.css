@@ -1,0 +1,18 @@
+.news, .news-one, .news-two, .news-three, .news-four, .news-five, .news-six, .news-seven, .news-eight, .news-nine, .news-ten {
+    text-align: center;
+    width: 453px;
+    height: 290px;
+    margin-left: -14px;
+}
+
+.section {
+    text-align: center;
+}
+
+.title {
+    margin: 10px;
+}
+
+.a {
+    margin: 10px;
+}
