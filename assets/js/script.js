@@ -56,25 +56,26 @@ dogeButton.addEventListener("click", function (event) {
 })
 
 
+//localStorage Email Field
+var formInputField = document.getElementById("name-input");
+var formArray = [];
+var formSubmitButton = document.querySelector(".email-submit");
 
+formSubmitButton.addEventListener('click', function storeName(event) {
+  event.preventDefault();
+  formArray.push(formInputField.value);
+  localStorage.setItem('name', formArray);
+  console.log(localStorage);
+})
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//displayheader onload
+document.addEventListener('load', function displayName(event) {
+  event.preventDefault();
+  var headerText = document.getElementById('localName');
+  var localPush = localStorage.getItem('name', formArray);
+  
+  headerText.innerHTML = localPush;
+});
 
 
 
