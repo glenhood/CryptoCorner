@@ -190,19 +190,17 @@ fetch("https://salty-mountain-68764.herokuapp.com/https://api.coingecko.com/api/
         textEl.textContent = data.tickers[0].trust_score;
         tickerEl.append(textEl)
 
-        // var urlEl = document.createElement('div');
-        // urlEl.textContent = data.results[i].link;
-        // newsEl.append(urlEl);
-    
-});
-    // for (var i = 0; i < data.results.length; i++) {
-       
-    //     // var textEl = document.createElement('div');
-    //     // textEl.textContent = data.results[i].title;
-    //     // titleEl.append(textEl)
+  
+  })
 
-    //     // var urlEl = document.createElement('div');
-    //     // urlEl.textContent = data.results[i].link;
-    // //     // titleEl.append(urlEl);
-    // }
-// });
+
+
+var mainButton = document.getElementById('main-button');
+
+
+  //Bitcoin Button
+mainButton.addEventListener("click", function (event) {
+    console.log(event.target)
+    redirectMain = ("./index.html");
+    document.location.replace(redirectMain)
+});
