@@ -13,9 +13,8 @@ bitcoinButton.addEventListener("click", function (event) {
   console.log(event)
   var crypto = 'bitcoin';
 
-  var redirectUrl = ("./indexCoinSelected.html")
+  
 
-  document.location.replace(redirectUrl)
 
 })
 

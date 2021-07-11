@@ -10,11 +10,13 @@ var newsElEight = document.querySelector('.news-eight');
 var newsElNine = document.querySelector('.news-nine');
 var newsElTen = document.querySelector('.news-ten');
 
+coin= document.querySelector('.title').id;
+console.log(coin)
 
-var tickerEl = document.querySelector('.ticker');
+// var tickerEl = document.querySelector('.ticker');
 
 //Fetch Call: News IO
-fetch("https://salty-mountain-68764.herokuapp.com/https://newsdata.io/api/1/news?apikey=pub_51739a26cf8480212b56d293b1579383eb0&q=bitcoin&language=en")
+fetch(`https://salty-mountain-68764.herokuapp.com/https://newsdata.io/api/1/news?apikey=pub_51739a26cf8480212b56d293b1579383eb0&q=${coin}&language=en`)
 .then(response => {
     return response.json();
 })
@@ -139,59 +141,62 @@ fetch("https://salty-mountain-68764.herokuapp.com/https://newsdata.io/api/1/news
         urlEl.textContent = data.results[8].link;
         newsElNine.append(urlEl);
 
-        //News Title
-        var textEl = document.querySelector('#news-title-ten');
-        textEl.textContent = data.results[9].title;
-        newsElTen.append(textEl);
-        console.log(data.results[9].title);
-        
-
-        var urlEl = document.querySelector('#news-url-ten');
-        urlEl = document.createElement('a');
-        urlEl.setAttribute('href', data.results[9].link);
-        urlEl.textContent = data.results[9].link;
-        newsElTen.append(urlEl);
     
 });
 
-
-
-
 var tickerEl = document.querySelector('.ticker')
+var tickerElOne = document.querySelector('.ticker-one')
+var tickerElTwo = document.querySelector('.ticker-two')
+var tickerElThree = document.querySelector('.ticker-three')
+var tickerElFour = document.querySelector('.ticker-four')
+var tickerElFive = document.querySelector('.ticker-five')
 
-fetch("https://salty-mountain-68764.herokuapp.com/https://api.coingecko.com/api/v3/exchanges/bitcoin_com/tickers")
-.then(response => {
+
+// function ticker()   {
+//     var searchTerm;
+//     if(coin==='binance'){
+//         searchTerm='binancecoin'
+//     }else{searchTerm=coin}
+    fetch(`https://salty-mountain-68764.herokuapp.com/https://api.coingecko.com/api/v3/coins/${coin}/tickers?exchange_ids=exchange-ids&include_exchange_logo=include_exchange_logo`)
+    .then(response => {
     return response.json();
     // console.log(response);
+
+
+    
 })
+// }
+// ticker()
 .then(data => {
     console.log(data);
-        var textEl = document.createElement('div');
-        textEl.textContent = data.tickers[0].base;
+        var textEl = document.querySelector('#coinid');
+        textEl.textContent = data.tickers[1].base;
         tickerEl.append(textEl)
+        
 
-        var textEl = document.createElement('div');
-        textEl.textContent = data.tickers[0].coin_id;
-        tickerEl.append(textEl)
+        var textEl = document.querySelector('#name');
+        textEl.textContent = data.tickers[1].coin_id;
+        tickerElOne.append(textEl)
 
-        var textEl = document.createElement('div');
-        textEl.textContent = data.tickers[0].target;
-        tickerEl.append(textEl)
+        var textEl = document.querySelector('#currency');
+        textEl.textContent = data.tickers[1].target;
+        tickerElTwo.append(textEl)
 
-        var textEl = document.createElement('div');
-        textEl.textContent = data.tickers[0].last;
-        tickerEl.append(textEl)
+        var textEl = document.querySelector('#currentvalue');
+        textEl.textContent = data.tickers[1].last;
+        tickerElThree.append(textEl)
 
-        var textEl = document.createElement('div');
-        textEl.textContent = data.tickers[0].trade_url;
-        tickerEl.append(textEl)
+        var textEl = document.querySelector('#tradeurl');
+        textEl.textContent = data.tickers[1].trade_url;
+        tickerElFour.append(textEl)
 
-        var textEl = document.createElement('div');
-        textEl.textContent = data.tickers[0].trust_score;
-        tickerEl.append(textEl)
+        var textEl = document.querySelector('#trustscore');
+        textEl.textContent = data.tickers[1].trust_score;
+        tickerElFive.append(textEl)
 
   
   })
+
 
 
 
