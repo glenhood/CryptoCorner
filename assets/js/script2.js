@@ -1,9 +1,17 @@
 //Variables
 var newsEl = document.querySelector('.news');
+var newsElTwo = document.querySelector('.news-two');
+var newsElThree = document.querySelector('.news-three');
+var newsElFour = document.querySelector('.news-four');
+var newsElFive = document.querySelector('.news-five');
+var newsElSix = document.querySelector('.news-six');
+var newsElSeven = document.querySelector('.news-seven');
+var newsElEight = document.querySelector('.news-eight');
+var newsElNine = document.querySelector('.news-nine');
+var newsElTen = document.querySelector('.news-ten');
+
+
 var tickerEl = document.querySelector('.ticker');
-
-
-
 
 //Fetch Call: News IO
 fetch("https://salty-mountain-68764.herokuapp.com/https://newsdata.io/api/1/news?apikey=pub_51739a26cf8480212b56d293b1579383eb0&q=bitcoin&language=en")
@@ -28,7 +36,7 @@ fetch("https://salty-mountain-68764.herokuapp.com/https://newsdata.io/api/1/news
         //News Title
         var textEl = document.querySelector('#news-title-two');
         textEl.textContent = data.results[1].title;
-        newsEl.append(textEl);
+        newsElTwo.append(textEl);
         console.log(data.results[1].title);
         
 
@@ -36,13 +44,13 @@ fetch("https://salty-mountain-68764.herokuapp.com/https://newsdata.io/api/1/news
         urlEl = document.createElement('a');
         urlEl.setAttribute('href', data.results[1].link);
         urlEl.textContent = data.results[1].link;
-        newsEl.append(urlEl);
+        newsElTwo.append(urlEl);
 
 
         //News Title
         var textEl = document.querySelector('#news-title-three');
         textEl.textContent = data.results[2].title;
-        newsEl.append(textEl);
+        newsElThree.append(textEl);
         console.log(data.results[2].title);
         
 
@@ -50,13 +58,13 @@ fetch("https://salty-mountain-68764.herokuapp.com/https://newsdata.io/api/1/news
         urlEl = document.createElement('a');
         urlEl.setAttribute('href', data.results[2].link);
         urlEl.textContent = data.results[2].link;
-        newsEl.append(urlEl);
+        newsElThree.append(urlEl);
 
 
         //News Title
         var textEl = document.querySelector('#news-title-four');
         textEl.textContent = data.results[3].title;
-        newsEl.append(textEl);
+        newsElFour.append(textEl);
         console.log(data.results[3].title);
         
 
@@ -64,12 +72,12 @@ fetch("https://salty-mountain-68764.herokuapp.com/https://newsdata.io/api/1/news
         urlEl = document.createElement('a');
         urlEl.setAttribute('href', data.results[3].link);
         urlEl.textContent = data.results[3].link;
-        newsEl.append(urlEl);
+        newsElFour.append(urlEl);
 
         //News Title
         var textEl = document.querySelector('#news-title-five');
         textEl.textContent = data.results[4].title;
-        newsEl.append(textEl);
+        newsElFive.append(textEl);
         console.log(data.results[4].title);
         
 
@@ -77,12 +85,12 @@ fetch("https://salty-mountain-68764.herokuapp.com/https://newsdata.io/api/1/news
         urlEl = document.createElement('a');
         urlEl.setAttribute('href', data.results[4].link);
         urlEl.textContent = data.results[4].link;
-        newsEl.append(urlEl);
+        newsElFive.append(urlEl);
 
         //News Title
         var textEl = document.querySelector('#news-title-six');
         textEl.textContent = data.results[5].title;
-        newsEl.append(textEl);
+        newsElSix.append(textEl);
         console.log(data.results[5].title);
         
 
@@ -90,12 +98,12 @@ fetch("https://salty-mountain-68764.herokuapp.com/https://newsdata.io/api/1/news
         urlEl = document.createElement('a');
         urlEl.setAttribute('href', data.results[5].link);
         urlEl.textContent = data.results[5].link;
-        newsEl.append(urlEl);
+        newsElSix.append(urlEl);
 
         //News Title
         var textEl = document.querySelector('#news-title-seven');
         textEl.textContent = data.results[6].title;
-        newsEl.append(textEl);
+        newsElSeven.append(textEl);
         console.log(data.results[6].title);
         
 
@@ -103,12 +111,12 @@ fetch("https://salty-mountain-68764.herokuapp.com/https://newsdata.io/api/1/news
         urlEl = document.createElement('a');
         urlEl.setAttribute('href', data.results[6].link);
         urlEl.textContent = data.results[6].link;
-        newsEl.append(urlEl);
+        newsElSeven.append(urlEl);
 
         //News Title
         var textEl = document.querySelector('#news-title-eight');
         textEl.textContent = data.results[7].title;
-        newsEl.append(textEl);
+        newsElEight.append(textEl);
         console.log(data.results[7].title);
         
 
@@ -116,12 +124,12 @@ fetch("https://salty-mountain-68764.herokuapp.com/https://newsdata.io/api/1/news
         urlEl = document.createElement('a');
         urlEl.setAttribute('href', data.results[7].link);
         urlEl.textContent = data.results[7].link;
-        newsEl.append(urlEl);
+        newsElEight.append(urlEl);
 
         //News Title
         var textEl = document.querySelector('#news-title-nine');
         textEl.textContent = data.results[8].title;
-        newsEl.append(textEl);
+        newsElNine.append(textEl);
         console.log(data.results[8].title);
         
 
@@ -129,12 +137,12 @@ fetch("https://salty-mountain-68764.herokuapp.com/https://newsdata.io/api/1/news
         urlEl = document.createElement('a');
         urlEl.setAttribute('href', data.results[8].link);
         urlEl.textContent = data.results[8].link;
-        newsEl.append(urlEl);
+        newsElNine.append(urlEl);
 
         //News Title
         var textEl = document.querySelector('#news-title-ten');
         textEl.textContent = data.results[9].title;
-        newsEl.append(textEl);
+        newsElTen.append(textEl);
         console.log(data.results[9].title);
         
 
@@ -142,7 +150,7 @@ fetch("https://salty-mountain-68764.herokuapp.com/https://newsdata.io/api/1/news
         urlEl = document.createElement('a');
         urlEl.setAttribute('href', data.results[9].link);
         urlEl.textContent = data.results[9].link;
-        newsEl.append(urlEl);
+        newsElTen.append(urlEl);
     
 });
 
