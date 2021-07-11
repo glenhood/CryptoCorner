@@ -2,8 +2,7 @@
     text-align: center;
     width: 453px;
     height: 290px;
-    margin-left: -14px;
-}
+    margin-right: -97px;}
 
 .section {
     text-align: center;
@@ -13,6 +12,12 @@
     margin: 10px;
 }
 
-.a {
-    margin: 10px;
+a {
+    font-size: 12px;
+    margin: 2px;
+}
+
+
+.title.is-5 {
+    font-size: 18px;
 }
