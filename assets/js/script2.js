@@ -6,7 +6,7 @@ var tickerEl = document.querySelector('.ticker');
 
 
 //Fetch Call: News IO
-fetch("https://salty-mountain-68764.herokuapp.com/https://newsdata.io/api/1/news?apikey=pub_516dfa61485d9a13df33b7be9a7ff5a6ec0&q=bitcoin&language=en")
+fetch("https://salty-mountain-68764.herokuapp.com/https://newsdata.io/api/1/news?apikey=pub_51739a26cf8480212b56d293b1579383eb0&q=bitcoin&language=en")
 .then(response => {
     return response.json();
 })

@@ -1,3 +1,7 @@
 .card {
     height: 100%;
 }
+body {
+    background-image: url(https://img.etimg.com/thumb/msid-81019907,width-650,imgsize-588285,,resizemode-4,quality-100/crypto.jpg);
+    background-size: auto;
+}
