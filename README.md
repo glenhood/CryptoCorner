@@ -2,9 +2,9 @@
 https://github.com/glenhood
 https://glenhood.github.io/Project-1/
 
-## Include screen shot of deployed website/results after user clicks
- ![alt text](assets\images\1.PNG)
- ![alt text](assets\images\2.PNG)
+
+ ![alt text](assets/images/1.png)
+ ![alt text](assets/images/2.png)
 
 ## Purpose -
 This site was created in order to introduce absolute beginners to cryptocurrency, explain how it its market works, and provide steps they can take to learn more and spark their interest. 
