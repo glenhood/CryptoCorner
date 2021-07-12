@@ -16,7 +16,7 @@ console.log(coin)
 // var tickerEl = document.querySelector('.ticker');
 
 //Fetch Call: News IO
-fetch(`https://salty-mountain-68764.herokuapp.com/https://newsdata.io/api/1/news?apikey=pub_51739a26cf8480212b56d293b1579383eb0&q=${coin}&language=en`)
+// fetch(`https://salty-mountain-68764.herokuapp.com/https://newsdata.io/api/1/news?apikey=pub_51739a26cf8480212b56d293b1579383eb0&q=${coin}&language=en`)
 .then(response => {
     return response.json();
 })
@@ -157,7 +157,7 @@ var tickerElFive = document.querySelector('.ticker-five')
 //     if(coin==='binance'){
 //         searchTerm='binancecoin'
 //     }else{searchTerm=coin}
-    fetch(`https://salty-mountain-68764.herokuapp.com/https://api.coingecko.com/api/v3/coins/${coin}/tickers?exchange_ids=exchange-ids&include_exchange_logo=include_exchange_logo`)
+    // fetch(`https://salty-mountain-68764.herokuapp.com/https://api.coingecko.com/api/v3/coins/${coin}/tickers?exchange_ids=exchange-ids&include_exchange_logo=include_exchange_logo`)
     .then(response => {
     return response.json();
     // console.log(response);

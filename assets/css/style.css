@@ -16,3 +16,7 @@
   .hero-background.is-transparent {
     opacity: 0.3;
   }
+
+  .hero-image {
+    width: 100vw;
+  }
