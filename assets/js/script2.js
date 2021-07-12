@@ -10,7 +10,7 @@ var newsElEight = document.querySelector('.news-eight');
 var newsElNine = document.querySelector('.news-nine');
 var newsElTen = document.querySelector('.news-ten');
 
-coin= document.querySelector('.title').id;
+coin= document.querySelector('.coin').id;
 console.log(coin)
 
 // var tickerEl = document.querySelector('.ticker');
