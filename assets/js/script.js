@@ -57,56 +57,33 @@ dogeButton.addEventListener("click", function (event) {
 
 //localStorage Email Field
 var formInputField = document.getElementById("name-input");
-var formArray = [];
+var emailInputField = document.getElementById("email-input")
+var formArrayName = [];
+var formArrayEmail = [];
 var formSubmitButton = document.querySelector(".email-submit");
 
 formSubmitButton.addEventListener('click', function storeName(event) {
   event.preventDefault();
-  formArray.push(formInputField.value);
-  localStorage.setItem('name', formArray);
+  formArrayName.push(formInputField.value);
+  formArrayEmail.push(emailInputField.value);
+  localStorage.setItem('name', formArrayName);
+  localStorage.setItem('email', formArrayEmail);
   console.log(localStorage);
-})
-
-//displayheader onload
-document.addEventListener('load', function displayName(event) {
-  event.preventDefault();
-  var headerText = document.getElementById('localName');
-  var localPush = localStorage.getItem('name', formArray);
-  
-  headerText.innerHTML = localPush;
 });
 
+var credList = document.querySelector('.credlist');
+var dumpList = document.querySelector('.dumplist');
 
+dumpList.addEventListener('click', function (event) {
+  event.preventDefault();
+});
 
+credList.addEventListener('click', function (event) {
+ event.preventDefault();
+ 
+  dumpList.innerHTML = localStorage.getItem('name', formArrayName) + ' , ' + localStorage.getItem('email', formArrayEmail);
+  if(formInputField && emailInputField == '') {
+    dumpList.style.visibility = 'hidden';
+  }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// console.log(data.results[i].link);
-// https://cors-anywhere.herokuapp.com/
-// https://salty-mountain-68764.herokuapp.com/
-  // for (var i = 0; i < data.length; i++) {
-    //     var userName = document.createElement('h3');
-    //     var issueTitle = document.createElement('p');
-    //     userName.textContent = data[i].user.login;
-    //     issueTitle.textContent = data[i].title;
-    //     issueContainer.append(userName);
-    //     issueContainer.append(issueTitle);
-    //   }
+})
