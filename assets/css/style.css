@@ -20,3 +20,7 @@
   .hero-image {
     width: 100vw;
   }
+
+  .dumplist {
+      cursor:default;
+  }
