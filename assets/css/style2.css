@@ -21,3 +21,78 @@ a {
 .title.is-5 {
     font-size: 18px;
 }
+
+.row {
+ 
+    position: absolute;
+    top: 0px;
+    left: 1440px;
+  }
+  
+  .row2 {
+   
+    position: absolute;
+    top: 0px;
+    left: 475px;
+    
+  }
+  
+  .row3 {
+  
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  
+  .row4 {
+   
+    position: absolute;
+    top: 0px;
+    left: 950px;
+    
+  }
+  
+  .row5 {
+    
+    position: absolute;
+    top: 475px;
+    left: 1425px;
+    
+  }
+  .row6 {
+   
+    position: absolute;
+    top: 475px;
+    left: 475px;
+    
+  }
+  .row7 {
+   
+    position: absolute;
+    top: 475px;
+    left: 0px;
+    
+  }
+  .row8 {
+   
+    position: absolute;
+    top: 475px;
+    left: 950px;
+    
+    
+  }
+  
+  @media (max-width: 640px) {
+    
+   .float{
+      
+      position: static;
+      float:left;
+      
+      
+    }
+    .container-fluid{
+      
+      margin: auto;
+    }
+  }
