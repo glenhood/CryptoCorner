@@ -1,8 +1,8 @@
-.news, .news-one, .news-two, .news-three, .news-four, .news-five, .news-six, .news-seven, .news-eight, .news-nine, .news-ten {
+/* .news, .news-one, .news-two, .news-three, .news-four, .news-five, .news-six, .news-seven, .news-eight, .news-nine, .news-ten {
     text-align: center;
     width: 453px;
     height: 290px;
-    margin-right: -97px;}
+    margin-right: -97px;} */
 
 .section {
     text-align: center;
@@ -22,6 +22,28 @@ a {
     font-size: 18px;
 }
 
+.hero-body {
+  background-color: black;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  text-align: center;
+  font-size: 60px;
+}
+
+.has-text-link {
+  background-color: black;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  text-align: center;
+  font-size: 60px;
+}
+
+.body {
+  background-color: black;
+}
+.row {
+margin-top: 20px;
+}
 /* .row {
  
     position: absolute;
