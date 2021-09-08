@@ -22,7 +22,7 @@ a {
     font-size: 18px;
 }
 
-.row {
+/* .row {
  
     position: absolute;
     top: 0px;
@@ -81,7 +81,7 @@ a {
     
     
   }
-  
+   */
   @media (max-width: 640px) {
     
    .float{
