@@ -1,9 +1,10 @@
-/* .news, .news-one, .news-two, .news-three, .news-four, .news-five, .news-six, .news-seven, .news-eight, .news-nine, .news-ten {
-    text-align: center;
-    width: 453px;
-    height: 290px;
-    margin-right: -97px;} */
-
+.news, .news-one, .news-two, .news-three, .news-four, .news-five, .news-six, .news-seven, .news-eight, .news-nine, .news-ten {
+    font-size: x-large;
+}
+.card {
+  background-color: black;
+  color: white;
+}
 .section {
     text-align: center;
 }
@@ -44,66 +45,7 @@ a {
 .row {
 margin-top: 20px;
 }
-/* .row {
- 
-    position: absolute;
-    top: 0px;
-    left: 1440px;
-  }
-  
-  .row2 {
-   
-    position: absolute;
-    top: 0px;
-    left: 475px;
-    
-  }
-  
-  .row3 {
-  
-    position: absolute;
-    top: 0px;
-    left: 0px;
-  }
-  
-  .row4 {
-   
-    position: absolute;
-    top: 0px;
-    left: 950px;
-    
-  }
-  
-  .row5 {
-    
-    position: absolute;
-    top: 475px;
-    left: 1425px;
-    
-  }
-  .row6 {
-   
-    position: absolute;
-    top: 475px;
-    left: 475px;
-    
-  }
-  .row7 {
-   
-    position: absolute;
-    top: 475px;
-    left: 0px;
-    
-  }
-  .row8 {
-   
-    position: absolute;
-    top: 475px;
-    left: 950px;
-    
-    
-  }
-   */
+
   @media (max-width: 640px) {
     
    .float{
