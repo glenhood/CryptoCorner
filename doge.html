@@ -5,158 +5,133 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CC: Doge</title>
+  <title>CC: Bitcoin</title>
   <link rel="stylesheet" href="./assets/css/reset.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/css/style2.css">
 </head>
 
-<body>
+<body class="body">
   <!-- Hero Image: Title -->
   <section class="hero is-link">
     <div class="hero-body ">
-      <p class="title ">
-        CryptoCorner
-      </p>
-      <p class="subtitle">
-        A streamlined introduction to crypto for beginners!
-      </p>
+      <img src="./assets/images/5.png" alt="Bitcoin" style="width:500px;height:100px;">
     </div>
   </section>
+  
+  
+  <div class="container-fluid">
+  <div class="row ">
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <link rel="stylesheet" href="./assets/css/style2.css">
+  <script type="text/javascript">
+  new TradingView.widget({
+    "width": 1350,
+    "height": 700,
+    "symbol": "DOGEUSDT",
+    "interval": "D",
+    "timezone": "Etc/UTC",
+    "theme": "Dark",
+    "style": "1",
+    "locale": "en",
+    "toolbar_bg": "#f1f3f6",
+    "enable_publishing": true,
+    "hide_side_toolbar": false,
+    "allow_symbol_change": true,
+    "details": true,
+    "hideideas": true,
+    "studies": [
+      "RSI@tv-basicstudies",
+      "MASimple@tv-basicstudies",
+      "MASimple@tv-basicstudies",
+      "MASimple@tv-basicstudies",
+      "MACD@tv-basicstudies"
+    ]
+  });
+  </script></div>
+<section class="section">
+  <h1 class="coin" id='dogecoin'></h1>
 
-
-  <section class="section">
-    <h1 class="coin" id='dogecoin'></h1>
-
-    <!-- Coin ID -->
-    <div class="container is-max-desktop ticker">
-      <p>Coin ID:</p>
-      <div class="notification is-primary ticker is-link" id="coinid"></div>
-    </div>
-
-<!-- Coin Name -->
-    <div class="container is-max-desktop ticker-one">
-      <p>Name:</p>
-      <div class="notification is-primary is-link" id="name"></div>
-    </div>
-
-<!-- Traded Currency -->
-    <div class="container is-max-desktop ticker-two">
-      <p>Traded Currency:</p>
-      <div class="notification is-primary is-link" id="currency"></div>
-    </div>
-
-<!-- Current Value -->
-    <div class="container is-max-desktop ticker-three">
-      <p>Current Value: ($)</p>
-      <div class="notification is-primary is-link" id="currentvalue"></div>
-    </div>
-
-<!-- Trade URL -->
-    <div class="container is-max-desktop ticker-four">
-      <p>Trade URL:</p>
-      <div class="notification is-primary is-link" id="tradeurl"></div>
-    </div>
-
-<!-- Trust Score -->
-    <div class="container is-max-desktop ticker-five">
-      <p>Trust Score:</p>
-      <div class="notification is-primary ticker-five is-link" id="trustscore"></div>
-    </div>
-  </section>
-
-    <!-- News 1 -->
-    <div class="columns">
-      <div class="column">
-        <div class="card news">
-          <div class="card-content"></div>
-          <p class="title is-5" id="news-title"></p>
-          <p class="subtitle is-7" id="news-url"></p>
-        </div>
-      </div>
-      <!-- News 2 -->
-      <div class="column">
-        <div class="card news-two">
-          <div class="card-content">
-            <p class="title is-5" id="news-title-two"></p>
-            <p class="subtitle is-7" id="news-url-two"></p>
-          </div>
-        </div>
-      </div>
-      <!-- News 3 -->
-      <div class="column">
-        <div class="card news-three">
-          <div class="card-content">
-            <p class="title is-5" id="news-title-three"></p>
-            <p class="subtitle is-7" id="news-url-three"></p>
-          </div>
+<section class="section">
+  <img src="./assets/images/3.png" alt="News" style="width:200px;height:200px;padding-top: 30px;padding-left: 30px;padding-bottom: 30px;"/>
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="card news">
+        <div class="card-body">
+          <p class="card-text" id="news-title"></p>
+          <p class="card-text" id="news-url"></p>
         </div>
       </div>
     </div>
-    <!-- News 4 -->
-    <div class="columns">
-      <div class="column">
+    <div class="col-sm-4">
+      <div class="card news-two">
+        <div class="card-body">
+          <p class="card-text" id="news-title-two"></p>
+          <p class="card-text" id="news-url-two"></p>
+        </div>
+      </div>
+    </div>
+  <div class="col-sm-4">
+      <div class="card news-three">
+        <div class="card-body">
+          <p class="card-text" id="news-title-three"></p>
+          <p class="card-text" id="news-url-three"></p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-4">
         <div class="card news-four">
-          <div class="card-content">
-            <p class="title is-5" id="news-title-four"></p>
-            <p class="subtitle is-7" id="news-url-four"></p>
+          <div class="card-body">
+            <p class="card-text" id="news-title-four"></p>
+            <p class="card-text" id="news-url-four"></p>
           </div>
         </div>
       </div>
-      <!-- News 5 -->
-      <div class="column">
+      <div class="col-sm-4">
         <div class="card news-five">
-          <div class="card-content">
-            <p class="title is-5" id="news-title-five"></p>
-            <p class="subtitle is-7" id="news-url-five"></p>
+          <div class="card-body">
+            <p class="card-text" id="news-title-five"></p>
+            <p class="card-text" id="news-url-five"></p>
           </div>
         </div>
       </div>
-      <!-- News 6 -->
-      <div class="column">
+    <div class="col-sm-4">
         <div class="card news-six">
-          <div class="card-content">
-            <p class="title is-5" id="news-title-six"></p>
-            <p class="subtitle is-7" id="news-url-six"></p>
+          <div class="card-body">
+            <p class="card-text" id="news-title-six"></p>
+            <p class="card-text" id="news-url-six"></p>
           </div>
         </div>
       </div>
-    </div>
-    <!-- News 7 -->
-    <div class="columns">
-      <div class="column">
-        <div class="card news-seven">
-          <div class="card-content">
-            <p class="title is-5" id="news-title-seven"></p>
-            <p class="subtitle is-7" id="news-url-seven"></p>
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="card news-seven">
+            <div class="card-body">
+              <p class="card-text" id="news-title-seven"></p>
+              <p class="card-text" id="news-url-seven"></p>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- News 5 -->
-      <div class="column">
-        <div class="card news-eight">
-          <div class="card-content">
-            <p class="title is-5" id="news-title-eight"></p>
-            <p class="subtitle is-7" id="news-url-eight"></p>
+        <div class="col-sm-4">
+          <div class="card news-eight">
+            <div class="card-body">
+              <p class="card-text" id="news-title-eight"></p>
+              <p class="card-text" id="news-url-eight"></p>
+            </div>
           </div>
         </div>
-      </div>
-      <!-- News 6 -->
-      <div class="column">
-        <div class="card news-nine">
-          <div class="card-content">
-            <p class="title is-5" id="news-title-nine"></p>
-            <p class="subtitle is-7" id="news-url-nine"></p>
+      <div class="col-sm-4">
+          <div class="card news-nine">
+            <div class="card-body">
+              <p class="card-text" id="news-title-nine"></p>
+              <p class="card-text" id="news-url-nine"></p>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
+   
 
-
-
-    
-
-    <script src="./assets/js/script2.js"></script>
+  <script src="./assets/js/script2.js"></script>
 </body>
 
 </html>
